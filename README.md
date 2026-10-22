@@ -14,7 +14,38 @@
 Instead of placing blocks manually, a player joins our server, runs a command to receive a **magical wand**, clicks the ground, types a prompt like *"a giant bulldog with a top hat,"* chooses a scale, and the system generates a **voxelized 3D model** and builds it **next to the player** in-game.
 
 ---
+## My Contributions — Jared Sonkesak
 
+**Role:** AWS Backend Development, AI Integration, Testing & Presentation  
+**Event:** UGAHacks Hackathon
+
+I collaborated with a four-person team to develop **AI Minecraft Builder**, a generative AI application that transforms natural-language prompts into Minecraft structures using AWS cloud services and multiple AI models.
+
+My primary responsibility was developing the **text-to-image generation pipeline**, which processes user prompts and prepares image assets for downstream 3D model generation.
+
+### Key Contributions
+
+- **AWS Lambda Development:** Implemented a serverless Python function using Boto3 to invoke Amazon Titan Image Generator v2 through Amazon Bedrock.
+- **AI Image Generation:** Developed a prompt-processing workflow that generates isometric images from natural-language descriptions, including configurable generation parameters and negative prompts.
+- **Background Removal:** Integrated Titan's background removal functionality to preprocess generated images for the Hunyuan3D model.
+- **Amazon S3 Integration:** Implemented image decoding and S3 storage, returning bucket and object keys for downstream processing.
+- **Testing & Troubleshooting:** Led functional testing and helped identify and troubleshoot integration issues across the AI pipeline.
+- **Project Presentation:** Helped present and demonstrate the team's application, explaining its functionality and AI-powered building process.
+
+### Technologies I Worked With
+
+`Python` `AWS Lambda` `Amazon Bedrock` `Amazon Titan Image Generator v2` `Amazon S3` `Boto3` `JSON`
+
+### My Component's Workflow
+
+1. Receive and validate a natural-language prompt.
+2. Generate an isometric image using Amazon Titan Image Generator v2.
+3. Invoke Titan's background removal functionality.
+4. Decode the processed image and upload the PNG to Amazon S3.
+5. Return the S3 bucket and object key for downstream 3D model generation.
+
+**Original Project Repository:**  
+https://github.com/jakepalanca/ai-minecraft-builder
 ## What It Does
 
 ### User Experience (In-Game)
