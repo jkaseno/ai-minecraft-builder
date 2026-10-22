@@ -46,6 +46,7 @@ My primary responsibility was developing the **text-to-image generation pipeline
 
 **Original Project Repository:**  
 https://github.com/jakepalanca/ai-minecraft-builder
+
 ## What It Does
 
 ### User Experience (In-Game)
